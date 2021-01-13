@@ -1,4 +1,4 @@
-# FileContentIndexing
+# FileContentIndexing # EnterpriseSearch # ApacheTika #MultiPartUpload
 Index content of file to elastic app search by uploading file using multipart file
 
 Steps to get started:

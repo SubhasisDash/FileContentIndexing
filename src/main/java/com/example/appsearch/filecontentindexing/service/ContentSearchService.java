@@ -3,6 +3,7 @@ package com.example.appsearch.filecontentindexing.service;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
+import java.util.UUID;
 
 import org.apache.tika.Tika;
 import org.apache.tika.exception.TikaException;
@@ -51,7 +52,7 @@ public class ContentSearchService {
 		FileMetadata metadata=new FileMetadata();
 		metadata.setFilename(file.getOriginalFilename());
 		metadata.setFilesize(String.valueOf(file.getSize()));
-		metadata.setId("3");
+		metadata.setId(UUID.randomUUID().toString());
 		metadata.setUploaddirectory(uploadDir+file.getOriginalFilename());		
 		metadata.setFilecontent(filecontent);
 		metadata.setFiletype(fileType);
